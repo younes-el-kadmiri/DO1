@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - DO1</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/Contact.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="Accueil.html">
+                <img src="../images/logo.png" alt="Logo DO1" class="logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="À propos.html">À propos</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="Activités.html">Activités</a></li>
+                <li><a href="Projets.html">Projets</a></li>
+                <li><a href="Membres.html">Membres</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-button" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- Section Contact -->
+    <section class="contact-container">
+        <!-- Formulaire de contact -->
+        <div class="contact-form">
+            <h2>Contactez-nous</h2>
+            <form >
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Votre message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+
+        <!-- Carte de localisation -->
+        <div class="location-map">
+            <h2>Notre localisation</h2>
+            <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-7.542269825935365%2C33.56515567993443%2C-7.5392764806747445%2C33.566465363083694&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/33.565811/-7.540773">Afficher une carte plus grande</a></small>
+            <p>
+                <a href="https://www.openstreetmap.org/directions?from=&to=33.565994%2C-7.541052#map=19/33.565918/-7.541269" target="_blank">
+                    Voir sur OpenStreetMap
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 DO1 - <span class="highlight">We do it as one</span></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                <img src="../images/face.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                <img src="../images/ins.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+                <img src="../images/in.jpg" alt="LinkedIn">
+            </a>
+            <a href="mailto:contact@do1club.com" title="Email">
+                <img src="../images/mail.jpg" alt="Email">
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
