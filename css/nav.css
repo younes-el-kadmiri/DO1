@@ -1,0 +1,173 @@
+/* Styles généraux du Body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Couleur de fond générale */
+body {
+    background-color: #0660bb;
+}
+
+/* Styles du container global */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar (barre de navigation) */
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajuste l'espacement entre logo et liens */
+    padding: 15px 30px;
+    background: #007dc5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    flex-shrink: 0; /* Garde la taille du logo intacte */
+}
+
+.logo {
+    width: 100px; /* Taille du logo ajustable */
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Espacement entre les liens */
+    align-items: center;
+    padding-right: 10px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background: #0056b3;
+    color: #ffffff;
+}
+
+.nav-links a.active {
+    background: #00aaff;
+    font-weight: bold;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #001f3f;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+
+/* Toggle button pour mobiles */
+.navbar .toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.navbar .toggle-button div {
+    width: 100%;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+}
+
+/* Footer */
+/* Footer */
+footer {
+    background-color: #007dc5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+footer .highlight {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacement entre les icônes */
+    margin-top: 10px;
+}
+
+footer .social-icons a img {
+    width: 40px; /* Taille des icônes */
+    height: 40px;
+    border-radius: 50%; /* Rond pour les images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer .social-icons a img:hover {
+    transform: scale(1.2); /* Zoom au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre au survol */
+}
+

@@ -1,0 +1,56 @@
+
+.event {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black;
+    margin-top: 80px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+/* Styles pour le zoom */
+.gallery img:focus {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80%;
+    transform: translate(-50%, -50%) scale(1.1);
+    z-index: 1000;
+    outline: none; /* Supprime le contour par défaut au focus */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Ajout d'un arrière-plan semi-transparent */
+.gallery img:focus::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}

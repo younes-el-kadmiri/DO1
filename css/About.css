@@ -1,0 +1,132 @@
+.about-us {
+    background: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 80px;
+    color: #000000;
+}
+
+.about-us h1 {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Section Rôles */
+.roles {
+    background: #e9ecef;
+    padding: 60px 20px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.roles h2 {
+    font-size: 2.5rem;
+    color: #17a2b8;
+    margin-bottom: 40px;
+}
+
+/* Styles du tableau des rôles */
+.roles-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.roles-table thead {
+    background-color: #17a2b8;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.roles-table th, .roles-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+.roles-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.roles-table tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.roles-table tbody tr:hover {
+    background-color: #d4edda;
+    transition: background-color 0.3s ease;
+}
+
+/* Section Objectifs */
+.objectives {
+    background: #343a40;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.objectives h2 {
+    font-size: 2.5rem;
+    color: #00aeef;
+    margin-bottom: 30px;
+}
+
+.objectives ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+    text-align: left;
+}
+
+.objectives li {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.objectives li strong {
+    color: #00aeef;
+}
+
+/* Section Moyens d'Action */
+.actions {
+    background: #f8f9fa;
+    color: #000000;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.actions h2 {
+    font-size: 2.5rem;
+    color: #00aeef;
+    margin-bottom: 30px;
+}
+
+.actions ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.actions li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
