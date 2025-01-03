@@ -27,7 +27,7 @@ body {
     align-items: center;
     justify-content: space-between; /* Ajuste l'espacement entre logo et liens */
     padding: 15px 30px;
-    background: #007dc5;
+    background: #001883;
     position: fixed;
     top: 0;
     left: 0;
@@ -132,7 +132,7 @@ body {
 /* Footer */
 /* Footer */
 footer {
-    background-color: #007dc5;
+    background-color: #001883;
     color: white;
     padding: 20px 0;
     text-align: center;
